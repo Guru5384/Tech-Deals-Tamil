@@ -1,0 +1,287 @@
+/* ==========================================
+   HOME PAGE ONLY
+========================================== */
+
+/* Hero Background */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at 20% 20%,
+    rgba(212,175,55,.15),
+    transparent 35%),
+
+    radial-gradient(circle at 80% 80%,
+    rgba(212,175,55,.10),
+    transparent 40%);
+
+    z-index:0;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* Hero Title */
+
+.hero h1{
+
+    text-shadow:
+    0 0 20px rgba(212,175,55,.35);
+
+}
+
+/* ==========================================
+   FEATURED PRODUCTS
+========================================== */
+
+#featuredProducts,
+#latestProducts{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:28px;
+
+}
+
+/* Product Card */
+
+.product-card{
+
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.product-card:hover{
+
+    transform:
+    translateY(-10px);
+
+}
+
+/* Product Image */
+
+.product-card img{
+
+    transition:.35s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* Product Info */
+
+.product-info{
+
+    padding:18px;
+
+}
+
+.product-info h3{
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+}
+
+.product-info p{
+
+    color:#bdbdbd;
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+/* Price */
+
+.price{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#D4AF37;
+
+}
+/* ==========================================
+   DEAL BADGE
+========================================== */
+
+.badge{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:#D4AF37;
+
+    color:#000;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    z-index:5;
+
+}
+
+/* ==========================================
+   OFFER BANNER
+========================================== */
+
+.offer-banner{
+
+    width:90%;
+
+    margin:70px auto;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111,
+    #1d1d1d);
+
+    border:1px solid rgba(212,175,55,.25);
+
+}
+
+.offer-banner h2{
+
+    color:#D4AF37;
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.offer-banner p{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   PRODUCT HOVER GLOW
+========================================== */
+
+.product-card:hover{
+
+    box-shadow:
+
+    0 0 35px rgba(212,175,55,.20);
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.buy-btn{
+
+    margin-top:15px;
+
+}
+
+.buy-btn:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.offer-banner{
+
+padding:25px;
+
+}
+
+.offer-banner h2{
+
+font-size:28px;
+
+}
+
+.offer-banner p{
+
+font-size:15px;
+
+}
+
+.product-info h3{
+
+font-size:18px;
+
+}
+
+.price{
+
+font-size:24px;
+
+}
+
+}
+
+/* ==========================================
+   FADE
+========================================== */
+
+.offer-banner,
+.section{
+
+animation:fadeUp .7s ease;
+}

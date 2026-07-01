@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "ZEBRONICS EnergiPOD 27R2",
+    "brand": "ZEBRONICS",
+    "category": "Power Banks",
+    "badge": "BEST SELLER",
+    "price": "₹2,499",
+    "searchCode": "PB001",
+    "image": "images/products/zebronics-27r2.webp",
+    "affiliateLink": "https://amzn.to/4aqO0Sj",
+    "features": [
+      "27000mAh Battery",
+      "65W Fast Charging",
+      "2 Type-C + 1 USB",
+      "Metal Body",
+      "Flight Friendly"
+    ]
+  },
+]
